@@ -11,7 +11,8 @@
 
   <body>
     <header>
-      <%= link_to "Rails7BlogApp", root_path %>
+      <h1><%= link_to "Rails7BlogApp", root_path %></h1>
+
       <nav>
         <% if (user_signed_in?) %>
         <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete } %>
