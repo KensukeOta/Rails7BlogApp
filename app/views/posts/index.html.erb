@@ -1,1 +1,9 @@
-<h1>Hello Rails!</h1>
+<h1>記事一覧</h1>
+<ul class="posts">
+  <% @posts.each do |post| %>
+    <li class="post">
+      <h2 class="post-title"><%= link_to post.title, post %></h2>
+      <p class="post-user-name">by <%= post.user.name %></p>
+    </li>
+  <% end %>
+</ul>
