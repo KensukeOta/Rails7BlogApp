@@ -1,3 +1,7 @@
 <h1><%= @post.title %></h1>
 
 <p><%= @post.body %></p>
+
+<% if current_user.id == @post.user_id %>
+  <%= link_to "編集する", edit_post_path(@post) %>
+<% end %>
