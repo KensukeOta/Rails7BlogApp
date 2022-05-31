@@ -1,24 +1,17 @@
-# README
+# Rails7BlogApp
+Ruby on Rails7を使用したブログアプリです。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 使用した技術・ツール
+- バックエンド： __Ruby on Rails7.0.3__
+- 認証： __devise4.8.1__
+- バージョン管理ツール: __Git__ / __GitHub__
+- その他言語: __Ruby3.1.2__
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 実装した機能
+- ユーザー登録機能
+- ログイン・ログアウト機能
+- 記事投稿機能
+- 記事一覧表示機能
+- 記事詳細表示機能
+- 記事更新機能
+- 記事削除機能
