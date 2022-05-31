@@ -8,12 +8,12 @@ class PostsController < ApplicationController
   end
 
   def new 
+    authenticate_user!
     @post = Post.new
   end
 
   def create 
     @post = Post.new(post_params)
-    puts @post
 
     if @post.save
       redirect_to @post
