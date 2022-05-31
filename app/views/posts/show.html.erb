@@ -4,4 +4,5 @@
 
 <% if current_user.id == @post.user_id %>
   <%= link_to "編集する", edit_post_path(@post) %>
+  <%= button_to "削除する", post_path(@post), method: :delete, form: { data: { turbo_confirm: "Are you sure?" } } %>
 <% end %>
